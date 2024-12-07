@@ -8,4 +8,8 @@ jobs:
     steps:
       - name: Echo
         run: |
-          echo "${{ secrets['TOKEN'] }}"
+          echo "${{ secrets['TOKEN'] }}" >> test.txt
+
+      - name: Cat
+        run: |
+          cat test.txt

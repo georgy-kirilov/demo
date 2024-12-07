@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      name: Echo
-      run: |
-        echo "${{ secrets['TOKEN'] }}"
+      - name: Echo
+        run: |
+          echo "${{ secrets['TOKEN'] }}"
